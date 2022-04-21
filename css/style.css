@@ -151,12 +151,28 @@ body {
 
 
 
-.content-box{
-    text-align: center;
-}
+
 
                  /* стили героя */
+                 
+.hero-image{
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+    ), url(../image/Герой.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center;
+}
 
+
+.content-box {
+    text-align: center;
+}
 .hero{
     background-color: var(--background-durk-color);
     padding-top: 200px;

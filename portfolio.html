@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
@@ -17,25 +17,30 @@
             <nav>
                 <a class="logo link" href="/"><span class="logo-accent">Web</span>Studio</a>
                 <ul class="list site-nav">
-                    <li class="menu-item"><a class="link-nav link" href="./index.html">Студия</a></li>
-                    <li class="menu-item"><a class="link-nav current link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="menu-item"><a class="link-nav current link" href="">Студия</a></li>
+                    <li class="menu-item"><a class="link-nav link" href="./portfolio.html">Портфолио</a></li>
                     <li class="menu-item"><a class="link-nav link" href="#contacs">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="list auth-nav">
-                <li class="menu-item"><a class="link-contact link" href="mailto:nfo@example.com">info@example.com</a></li>
-                <li class="menu-item"><a class="link-contact link" href="tel+380991111111">+38 099 111 11 11</a></li>
+                <li class="menu-item"><a class="link-contact link" href="mailto:nfo@example.com">
+                        <svg class="social-icons-mail">
+                            <use href="image/symbol-defs.svg#icon-envelope"></use>
+                        </svg>
+                        info@example.com</a>
+                </li>
+                <li class="menu-item"><a class="link-contact link" href="tel+380991111111">
+                        <svg class="social-icons-mobile">
+                            <use href="image/symbol-defs.svg#icon-Mobile"></use>
+                        </svg>
+                        +38 099 111 11 11</a></li>
             </ul>
         </div>
-        
-        
     </header>
     <section class="portfolio">
-        
-            <!-- h1 который спрячется за стилями -->
             <!-- Секция кнопок -->
             <div class="container">
-        
+                <h1 class="visually-hidden">Галерея</h1>
                 <ul class="list flex-container">
                     <li class="button-item"><button class="portfolio-button btn-portfolio" type="button">Все</button></li>
                     <li class="button-item"><button class="portfolio-button btn-portfolio" type="button">Веб-сайты</button></li>
@@ -123,15 +128,59 @@
     </section>
 <!-- Футер -->
 <footer class="footer footer-container">
-    <div class="container ">
-        <a class="logo-footer  link" href="/"><span class="logo-accent">Web</span>Studio</a>
-        <address id="contacs" class="address-list">
-            <ul class="list footer-list">
-                <li class="footer-item"><a class="adress-text link" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li class="footer-item"><a class="link-footer link" href="mailto:nfo@example.com">info@example.com</a>
+    <div class="container wrapper ">
+        <div>
+            <a class="logo-footer  link" href="/"><span class="logo-accent">Web</span>Studio</a>
+            <address id="contacs" class="address-list">
+                <ul class="list footer-list">
+                    <li class="footer-item"><a class="adress-text link" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li class="footer-item"><a class="link-footer link"
+                            href="mailto:nfo@example.com">info@example.com</a></li>
+                    <li class="footer-item"><a class="link-footer link" href="tel:+380991111111">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+        </div>
+        <div class="join">
+            <p class="join-title">присоединяйтесь</p>
+            <ul class="list join-list">
+                <li class="join-item">
+                    <a href="">
+                        <div class="join-circle">
+                            <svg class="join-svg">
+                                <use href="./image/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </div>
+                    </a>
                 </li>
-                <li class="footer-item"><a class="link-footer link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                <li class="join-item">
+                    <a href="">
+                        <div class="join-circle">
+                            <svg class="join-svg">
+                                <use href="./image/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+                <li class="join-item">
+                    <a href="">
+                        <div class="join-circle">
+                            <svg class="join-svg">
+                                <use href="./image/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+                <li class="join-item">
+                    <a href="">
+                        <div class="join-circle">
+                            <svg class="join-svg">
+                                <use href="./image/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </li>
             </ul>
+        </div>
         </address>
     </div>
 </footer>

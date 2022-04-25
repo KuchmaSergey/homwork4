@@ -59,6 +59,16 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
 
 .list{
     list-style: none;
@@ -488,6 +498,46 @@ body {
 .footer-container{
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.wrapper{
+    display: flex;
+}
+.join{
+    margin-left: 70px;
+    margin-right: auto;
+}
+.join-title{ 
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    
+    color: var(--background-whitetext-color);
+}
+.join-list{
+    display: flex;
+}
+.join-item:not(:last-child){
+    margin-right: 10px;
+}
+.join-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.join-svg{
+    width: 20px;
+    height: 20px;
+    fill: var(--background-whitetext-color);
+}
+.join-circle:hover,
+.join-circle:focus {
+    background-color: var(--accent-color);
 }
 
 /*////////////////// стили портфолио //////////////////// */

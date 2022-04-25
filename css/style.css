@@ -399,6 +399,48 @@ body {
     background-color: var(--accent-color);
 }
 
+         /* секция постоянные клиенты */
+
+.client-contaner{
+    padding: 94px 0;
+}
+.client-title{ 
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.company-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.company-item:not(:last-child){
+    margin-right: 30px;
+}
+.client-box{
+    width: 170px;
+    height: 90px;
+    border: 1px solid var(--social-icons0color);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-company{
+    fill: var(--social-icons0color);
+}
+.client-box:hover .client-company,
+.client-box:focus .client-company,
+.client-box:hover .client-company,
+.client-box:focus .client-company {
+    fill: var(--accent-color);
+}
+.client-box:hover,
+.client-box:focus {
+    border: 1px solid var(--accent-color);
+}
 
 /* секция футера */
 .footer{

@@ -6,6 +6,7 @@
     --background-grey-color: #F5F4FA;
     --background-durk-color: #2F303A;
     --footer-contact-color:  rgba(255, 255, 255, 0.6);
+    --social-icons0color: #AFB1B8;;
 
 }
 
@@ -111,11 +112,9 @@ body {
 .menu-item {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
-
-    
-   
+    line-height: 1.14; 
 }
+
 .menu-item:not(:last-child){
     margin-right: 50px;
 }
@@ -138,18 +137,31 @@ body {
     color: var(--accent-color);
 }
 .link-contact{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 32px;
     margin-bottom: 32px;
-
     color: inherit;
 }
 .link-contact:hover,
 .link-contact:focus {
     color: var(--accent-color);
 }
+.social-icons-mail{
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+    margin-right: 10px;   
+}
 
+.social-icons-mobile{
+    width: 10px;
+    height: 16px;
+    fill: currentColor;
+    margin-right: 10px;
 
+}
 
 
 
@@ -260,6 +272,17 @@ body {
     line-height: 1.71;
 }
 
+.grey-box{
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: var(--background-grey-color);
+    margin-bottom: 30px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* секция чем мы занимаемся */
 
@@ -343,9 +366,38 @@ body {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
+    margin-bottom: 16px;
+}
+.social-list{
+    display: flex;
+    justify-content: center;
     margin-bottom: 30px;
 }
+.social-item:not(:last-child){
+    margin-right: 10px;
+}
+.social-icons-svg{
+    width: 20px;
+    height: 20px;
+    fill: var(--social-icons0color);
+}
+.social-icons-circle:hover .social-icons-svg,
+.social-icons-circle:focus .social-icons-svg{
+    fill: var(--background-whitetext-color);
+}
+.social-icons-circle{
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
 
+}
+.social-icons-circle:hover,
+.social-icons-circle:focus{
+    background-color: var(--accent-color);
+}
 
 
 /* секция футера */
